@@ -3,6 +3,10 @@
     background-color: transparent !important;
 }
 
+.bg-color{
+    background-color: black;
+}
+
 .styleFooter {
     font-size: 25px;
 }
