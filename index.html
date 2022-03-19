@@ -13,33 +13,39 @@
     <!-- Kit FontAwesome -->
     <script src="https://kit.fontawesome.com/f988f130b8.js" crossorigin="anonymous"></script>
     <!-- fin kit -->
+
+    <!-- Hoja de estilos propia -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="bg-dark">
-    <!-- Inicio Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"> <img src="assets/img/viajes.svg" alt=""> Viajes Chile</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Quiénes Somos</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Destacados</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+
+    <header id="inicio">
+        <!-- Inicio Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"> <img src="assets/img/viajes.svg" alt="" height="50px"> Viajes Chile</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#inicio">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#quienesSomos">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#destacados">Destacados</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <!-- Fin Navbar -->
 
     <!-- Inicio Header -->
@@ -56,6 +62,7 @@
                     <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
+            
             <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
                 data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -73,14 +80,14 @@
     <!-- Inicio sección principal -->
     <main>
         <!-- Inicio sección quienes somos -->
-        <div class="container">
-            <P class="text-center">QUIENES SOMOS</P>
-            <div class="row">
+        <div class="container" >
+            <P class="text-center text-white p-5" id="quienesSomos">QUIENES SOMOS</P>
+            <div class="row p-3">
 
 
 
-                <div class="col-12 col-md-4">
-                    <i class="fa-solid fa-plane text-center text-white bg-primary"></i>
+                <div class="col-12 col-md-4 d-none d-lg-block">
+                    <i class="fa-solid fa-plane text-center text-white bg-primary w-100"></i>
                     <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti sapiente
                         mollitia delectus
                         sunt ducimus sed eos obcaecati, ipsa maxime beatae dicta suscipit modi dignissimos facilis
@@ -88,18 +95,18 @@
 
                 </div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 d-none d-lg-block">
 
                     <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti sapiente
                         mollitia delectus
                         sunt ducimus sed eos obcaecati, ipsa maxime beatae dicta suscipit modi dignissimos facilis
                         dolorem qui amet sint quam!</p>
-                    <i class="fa-solid fa-mountain text-center text-white bg-primary"></i>
+                    <i class="fa-solid fa-mountain text-center text-white bg-primary w-100"></i>
 
                 </div>
 
-                <div class="col-12 col-md-4">
-                    <i class="fa-solid fa-route text-center text-white bg-primary"></i>
+                <div class="col-12 col-md-4 d-none d-lg-block">
+                    <i class="fa-solid fa-route text-center text-white bg-primary w-100"></i>
                     <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti sapiente
                         mollitia delectus
                         sunt ducimus sed eos obcaecati, ipsa maxime beatae dicta suscipit modi dignissimos facilis
@@ -115,8 +122,9 @@
         <!-- Fin sección quienes somos -->
 
         <!-- Inicio sección  destacados -->
-        <div class="container">
-            <div class="row">
+        <p class="text-center text-white p-5" id="destacados">DESTACADOS</p>
+        <div class="container p-5" >
+            <div class="card-deck">
                 <!-- Inicio Card -->
                 <div class="card bg-info" style="width: 18rem;">
                     <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
@@ -167,8 +175,8 @@
 
 
         <!-- Inicio sección contacto -->
-
-        <div class="container">
+        <p class="text-center text-white p-5" id="contacto">CONTACTO</p>
+        <div class="container p-4" >
             <form>
                 <div class="form-group">
                     <label for="exampleInputEmail1" class="text-white">Nombre</label>
@@ -194,7 +202,7 @@
 
     <!-- Inicio footer -->
     <footer>
-        <div class="container bg-info">
+        <div class="bg-info">
             <p class="text-white">VIAJES CHILE</p>
             <div class="text-white text-right">
                 <i class="fa-brands fa-github"></i>
@@ -208,9 +216,7 @@
     <!-- Fin footer -->
 
     <!-- Inicio Script Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
@@ -218,6 +224,13 @@
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
     <!-- Fin ScriptBootstrap -->
+
+
+    <!-- Scripts -->
+    <script src="assets/js/scripts.js"></script>
+    <!-- Fin scripts -->
+
+
 </body>
 
 </html>
