@@ -1,10 +1,18 @@
 /* Navbar transparente */
 .navbar {
     background-color: transparent !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
 }
 
 .bg-color{
     background-color: black;
+}
+
+.font {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
 }
 
 .styleFooter {
